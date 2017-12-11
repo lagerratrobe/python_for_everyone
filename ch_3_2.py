@@ -15,7 +15,7 @@ except:
     sys.exit(1)
 
 try:
-    int(input("Enter rate of pay: "))
+    pay_rate = int(input("Enter rate of pay: "))
 except:
     print("Use a numeric value")
     sys.exit(1)
