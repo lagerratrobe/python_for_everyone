@@ -10,13 +10,13 @@ Score   Grade
 ~~~
 """
 
-print (message_welcome)
+print(message_welcome)
 
 grade_input = input('Enter score:')
+grade = []
 
 try:
    grade_input = float(grade_input)
-
 except:
     sys.exit("Bad score (input is non numeric.)")
 
