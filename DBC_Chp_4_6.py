@@ -32,7 +32,7 @@ if hours_work >= hours_thresh:
     print('Total hours worked: ', hours_work,'\n')
     print('Normal payout:', hours_thresh, 'hours *', hours_rate ,'$/hour=', pay_normal, '\n')
     print('Extra payout:', hours_extra, 'hours *', hour_rate_extra, '$/overhours=', pay_extra, '\n')
-    print('Total money in da pocket:', pay_total)
+    print('Amount of money made:$', pay_total)
 else:
     hours_work = float(hours_work) * float(hours_rate)
-    print('Amount of money made:', hours_work)
+    print('Amount of money made: $', hours_work)
