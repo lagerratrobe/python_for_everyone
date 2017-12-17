@@ -26,6 +26,6 @@ while True:
     number_input = int(number_input) + int(user_input)
     i = i + 1
 
-print("Total:", number_input)
-print("Count:", i)
-print("Average:", calc_avr(number_input, i))
+print("Total: ", number_input)
+print("Count: ", i)
+print("Average: ", calc_avr(number_input, i))
