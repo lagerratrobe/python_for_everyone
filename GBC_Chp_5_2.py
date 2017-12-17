@@ -1,10 +1,10 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
-largest = 0
-smallest = 0
+largest = None
+smallest = None
 
 
 while True:
-    user_input = input("Please provide a number (or type done): ")
+    user_input = input("Please provide a number (or type 'done'): ")
 
     if user_input == "done":
         break
@@ -15,9 +15,9 @@ while True:
         print("Bad data (please enter a number or type 'done')")
         continue
 
-    if int(user_input) > int(largest):
+    if largest is None or int(user_input) > int(largest):
         largest = user_input
-    elif int(user_input) < int(smallest):
+    elif smallest is None or int(user_input) < int(smallest):
         smallest = user_input
 
 print ("Largest number:", largest)
